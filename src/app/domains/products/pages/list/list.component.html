@@ -11,7 +11,7 @@
       }
     </ul>
   </div>
-  <div class="grid grid-cols-4 gap-8 w-full">
+  <div class="grid grid-cols-4 gap-8 w-full h-full">
     @for (product of products(); track product.id) {
       <app-product [product]="product" (addToCart)="addToCart($event)" />
     }
